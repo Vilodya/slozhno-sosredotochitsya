@@ -2,4 +2,209 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color);
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  background-color: var(--bg-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+
+
+.title-decor {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  background-color: var(--accent-color);
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  place-items: center end;
+  height: 100vh;
+  padding: 10px;
+
+}
+
+@media (768px < width) {
+  .header,
+  .footer {
+    padding: 20px;
+  }
+}
+.decorated-zone {
+}
+.header__theme-menu {
+}
+.header__theme-menu-list {
+}
+.header__theme-menu-item {
+}
+.header__theme-menu-button {
+}
+.header__theme-menu-button_type_light {
+}
+.header__theme-menu-button_active {
+}
+.header__theme-menu-button_type_auto {
+}
+.header__theme-menu-button_type_dark {
+}
+
+.header__title,
+.footer__title {
+  color: var(--title-contrast-color);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+}
+
+@media (768px < width) {
+  .header__title,
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+  }
+
+  .header__title {
+    margin-inline-start: -20px;
+  }
+
+}
+
+.header__title {
+
+  justify-self: start;
+  text-shadow: 4px 4px 0 var(--title-shadow-color);
+}
+
+
+
+
+.header__subtitle {
+  width: max(50%, 355px);
+}
+
+.section {
+  padding: 50px 10px 0 10px;
+}
+
+.section:first-of-type {
+  padding: 40px 10px 0 10px;
+}
+.why {
+}
+.section__title {
+}
+
+.section__subtitle {
+  margin-top: 20px;
+}
+.section__paragraph {
+  margin-top: 10px;
+}
+.what {
+}
+.how {
+}
+.section__headline {
+  margin-block-start: 20px;
+  font-weight: 400;
+}
+.link {
+}
+.gallery {
+}
+.gallery__title {
+}
+.gallery__grid {
+}
+.gallery__grid-item {
+}
+.gallery__image {
+}
+.footer {
+}
+.footer__title {
+}
+
+
+
+/*Декоративные уголки*/
+.header::before,
+.header::after,
+.footer::before,
+.footer::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.header::after,
+.footer::before {
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+.header::before,
+.footer::after {
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+}
+
+@media (768px < width) {
+  .header::after,
+  .footer::before {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+}
+
+  .header::before,
+  .footer::after {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+}
+
+.gallery {
+}
+.gallery__title {
+}
+
+.gallery__grid {
+  display: grid;
+  gap: 10px;
+  margin-block-start: 10px;
+}
+.gallery__grid-item {
+
+}
+.gallery__image {
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  margin-block-start: 40px;
+  padding: 10px;
+}
+
+.footer__title {
+  margin: auto;
+  text-shadow: 2px 2px 0px var(--title-shadow-color);
+}
+
