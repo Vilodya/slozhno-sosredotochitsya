@@ -140,9 +140,9 @@
 }
 
 .section {
-  padding: 50px 10px 0 10px;
   display: grid;
   gap: 20px;
+  padding: 50px 10px 0 10px;
 }
 
 .section:first-of-type {
@@ -306,7 +306,7 @@
   }
 
   .what__content {
-    grid-column: 1 / -1;
     grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
   }
 }
