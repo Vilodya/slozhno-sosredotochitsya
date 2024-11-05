@@ -83,6 +83,7 @@
 
   .page {
     background-image: url("../images/cover-image-light.png");
+    background-color: var(--bg-color);
   }
 
   .link:focus-visible {
