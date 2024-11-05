@@ -16,7 +16,8 @@
   --section-heading-color: #FF0070;
   --title-contrast-color: #FFC2E6;
   --title-shadow-color: #FF8DCB;
-  background-image: url(../images/cover-image-light.png);
+  background-color: var(--bg-color);
+  background-image: url("../images/cover-image-light.png");
 }
 
 .page.theme_light .link:focus-visible {

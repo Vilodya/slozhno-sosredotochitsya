@@ -7,7 +7,7 @@
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
   background-color: var(--bg-color);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url("../images/cover-image-dark.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -171,9 +171,6 @@
 .gallery__grid {
   display: grid;
   gap: 10px;
-}
-.gallery__grid-item {
-
 }
 
 .gallery__image {

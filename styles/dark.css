@@ -16,7 +16,8 @@
   --section-heading-color: #FF0070;
   --title-contrast-color: #DB00FF;
   --title-shadow-color: #FF0070;
-  background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color);
+  background-image: url("../images/cover-image-dark.png");
 }
 
 .page.theme_dark .link:focus-visible {
