@@ -40,14 +40,13 @@
   grid-template-rows: 1fr min-content 1fr;
   place-items: center end;
   height: 100vh;
+  min-height: 668px;
   padding: 10px;
 }
 
 /*Декоративные уголки*/
-.header::before,
-.header::after,
-.footer::before,
-.footer::after {
+.decorated-zone::before,
+.decorated-zone::after {
   content: "";
   position: absolute;
   display: block;
@@ -55,18 +54,16 @@
   height: 25px;
 }
 
-.header::after,
-.footer::before {
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+.decorated-zone::before {
+  border-bottom: 1px solid var(--decor-color);
+  border-left: 1px solid var(--decor-color);
   inset-inline-start: 10px;
   inset-block-end: 10px;
 }
 
-.header::before,
-.footer::after {
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+.decorated-zone::after {
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
   inset-block-start: 10px;
   inset-inline-end: 10px;
 }
@@ -91,7 +88,7 @@
   height: 9px;
   border-radius: 50%;
   background-color: var(--accent-color);
-  filter: drop-shadow(0px 0px 2px var(--accent-color));
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .header__theme-menu-list {
@@ -145,7 +142,7 @@
   padding: 50px 10px 0 10px;
 }
 
-.section:first-of-type {
+.after-header-section {
   padding-block-start: 40px;
 }
 
@@ -183,6 +180,7 @@
   position: relative;
   display: flex;
   height: 100vh;
+  min-height: 668px;
   margin-block-start: 40px;
   padding: 10px;
 }
@@ -212,30 +210,28 @@
 
   .header__title,
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__title {
     margin-inline-start: -20px;
   }
 
-  .header::after,
-  .footer::before {
+  .decorated-zone::before {
+    bottom: 20px;
     inset-inline-start: 20px;
-    inset-block-end: 20px;
   }
 
-  .header::before,
-  .footer::after {
-    inset-block-start: 20px;
+  .decorated-zone::after {
     inset-inline-end: 20px;
+    inset-block-start: 20px;
   }
 
   .section {
     padding: 80px 20px 0 20px;
   }
 
-  .section:first-of-type {
+  .after-header-section {
     padding-block-start: 60px;
   }
 
@@ -275,9 +271,7 @@
 }
 
 @media (768px <= width < 1024px) {
-  .why,
-  .what,
-  .how {
+  .card-section {
     grid-template-columns: 1fr 2fr;
   }
 }
@@ -292,9 +286,7 @@
     flex-direction: row;
   }
 
-  .why,
-  .what,
-  .how {
+  .card-section {
     grid-template-columns: repeat(3, 1fr);
   }
 
