@@ -86,7 +86,7 @@
     outline-color: var(--text-color);
   }
   .link:hover,
-  .header__theme-menu-button:focus-visible{
+  .header__theme-menu-button:focus-visible {
     border-color: var(--text-color);
   }
 
