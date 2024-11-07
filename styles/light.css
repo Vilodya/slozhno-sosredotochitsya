@@ -21,48 +21,6 @@
   background-image: url("../images/cover-image-light.png");
 }
 
-.page.theme_light .link:focus-visible {
-  outline-color: var(--text-color);
-}
-
-.page.theme_light .link:hover {
-  border-color: var(--text-color);
-}
-
-.page.theme_light .decor-element {
-  display: none;
-}
-
-.page.theme_light .header__title {
-  color: var(--title-contrast-color);
-  text-shadow: 4px 4px 0 var(--title-shadow-color);
-}
-
-.page.theme_light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.page.theme_light .header__theme-menu-button:focus-visible {
-  border-color: var(--text-color);
-}
-
-.page.theme_light .header__theme-menu-button:hover {
-  outline-color: rgba(50, 49, 45, 0.40);
-}
-
-.page.theme_light .header__theme-menu-button_active {
-  outline-color: var(--text-color);
-}
-
-.page.theme_light .decorated-zone:before,
-.decorated-zone::after {
-  border-color: var(--decor-color);
-}
-
-.page.theme_light .section__title {
-  color: var(--text-color);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
@@ -74,38 +32,5 @@
     --title-contrast-color: #FFC2E6;
     --title-shadow-color: #FF8DCB;
     --decor-color: #353430;
-  }
-
-  .page {
-    background-image: url("../images/cover-image-light.png");
-    background-color: var(--bg-color);
-  }
-
-  .link:focus-visible,
-  .header__theme-menu-button_active {
-    outline-color: var(--text-color);
-  }
-  .link:hover,
-  .header__theme-menu-button:focus-visible {
-    border-color: var(--text-color);
-  }
-
-  .decor-element {
-    display: none;
-  }
-
-  .header__theme-menu-button:hover {
-    outline-color: rgba(50, 49, 45, 0.40);
-  }
-
-  .header__theme-menu-button,
-  .section__title,
-  .title-decor {
-    color: var(--text-color);
-  }
-
-  .decorated-zone:before,
-  .decorated-zone::after {
-    border-color: var(--decor-color);
   }
 }
