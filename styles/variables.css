@@ -8,12 +8,11 @@
   --main-line-height: 130%;
 
   --bg-color: #000028;
+  --main-color: #FF0070;
   --accent-color: #FF0070;
-  --text-color: #F1B2CE;
-  --heading-color: #000028;
-  --section-heading-color: #FF0070;
+  --main-text-color: #F1B2CE;
   --title-contrast-color: #DB00FF;
-  --title-shadow-color: #FF0070;
-  --decor-color: #FF0070;
+  --title-shadow-color: #FF0070; 
+  --heading-color: #000028;
 }
 
